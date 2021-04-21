@@ -18,7 +18,7 @@
 button {
   width: 200px;
   height: 50px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -49,15 +49,15 @@ header {
 }
 
 header .logo {
-  padding: 17px 61px;
+  padding: 16px 61px 17px 61px;
 }
 
 header .fa-bars {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 14px;
   background-color: var(--button-bg);
   color: var(--dark-bg);
-  padding: 13px;
+  padding: 13px 13px 13px 14px;
   border-radius: 3px;
   margin-right: 150px;
   margin-top: 30px;
@@ -77,12 +77,13 @@ header .fa-bars {
 }
 
 .menu h1 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
   line-height: 96px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   width: 513px;
   /* text-align: center; */
   padding-top: 107px;
@@ -90,7 +91,7 @@ header .fa-bars {
 }
 
 .menu p {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -143,7 +144,7 @@ header .fa-bars {
 }
 
 .promo h2 {
-  font-family: Roboto;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -152,7 +153,7 @@ header .fa-bars {
 }
 
 .promo p {
-  font-family: Dosis;
+  font-family: "Dosis", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -183,7 +184,7 @@ header .fa-bars {
 }
 
 .service h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -193,7 +194,7 @@ header .fa-bars {
 }
 
 .service h3 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -210,7 +211,7 @@ header .fa-bars {
 
 .service p {
   color: var(--light-text-font);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -226,7 +227,7 @@ header .fa-bars {
   margin: 3px;
   text-align: center;
   padding: 103px 8px 20px 8px;
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -258,39 +259,35 @@ header .fa-bars {
 }
 
 .service li:first-child ::before {
-  background-image: url("../images/SEOIcons8.png");
+  background-image: url("../images/service1.png");
 }
 
 .service li:nth-child(2) ::before {
-  background-image: url("../images/SEOIcons10.png");
+  background-image: url("../images/service2.png");
 }
 
 .service li:nth-child(3) ::before {
-  background-image: url("../images/SEOIcons18.png");
+  background-image: url("../images/service3.png");
 }
 
 .service li:nth-child(4) ::before {
-  background-image: url("../images/SEOIcons34.png");
+  background-image: url("../images/service4.png");
 }
 
 .service li:nth-child(5) ::before {
-  background-image: url("../images/SEOIcons33.png");
+  background-image: url("../images/service5.png");
 }
 
 .service li:nth-child(6) ::before {
-  content: url("../images/SEOIcons21.svg");
+  content: url("../images/service6.png");
 }
 
-/* .test {
-    fill: red;
-} */
-
 .service li:nth-child(7) ::before {
-  background-image: url("../images/SEOIcons9.png");
+  background-image: url("../images/service7.png");
 }
 
 .service li:last-child ::before {
-  background-image: url("../images/SEOIcons27.png");
+  background-image: url("../images/service8.png");
 }
 
 .projects {
@@ -308,7 +305,7 @@ header .fa-bars {
 }
 
 .projects h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -351,7 +348,7 @@ header .fa-bars {
 }
 
 .projects span {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -374,7 +371,7 @@ header .fa-bars {
 }
 
 .team h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -388,7 +385,7 @@ header .fa-bars {
 }
 
 .team p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -411,7 +408,7 @@ header .fa-bars {
 }
 
 .news h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -445,7 +442,7 @@ header .fa-bars {
 .news p {
   /* display: block; */
   padding-top: 8px;
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -468,7 +465,7 @@ header .fa-bars {
 }
 
 .motto blockquote {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -484,7 +481,7 @@ header .fa-bars {
 }
 
 .motto .author {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -522,7 +519,7 @@ footer .logo {
 }
 
 footer p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -537,7 +534,7 @@ footer a {
 }
 
 footer ul {
-  list-style-type: none;  
+  list-style-type: none;
 }
 
 footer .social {
@@ -559,53 +556,54 @@ footer .social li:last-child {
 }
 
 footer .wrapper {
-    display: flex;
-    /* justify-content: ; */
+  display: flex;
+  /* justify-content: ; */
 }
 
 footer .wrapper div {
-    margin-right: 160px;
-    font-family: Roboto;
+  margin-right: 160px;
+  font-family: Roboto;
 }
 
 footer h3 {
-    font-family: Roboto Condensed;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 19px;
-text-transform: uppercase;
-margin-bottom: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
-footer a, address {
-    font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 20px;
+footer a,
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
 }
 
-footer .help, .links {
-    width: 135px;
+footer .help,
+.links {
+  width: 135px;
 }
 
 footer .go-top {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: -42px;
-    left: 0;
-    width: 100%;
-    background-color: var(--mid-light-bg);
-    /* outline: 1px solid black; */
-    color: var(--text-font);
-    text-align: right;
-    padding-top: 7px;
-    padding-bottom: 11px;
-    padding-right: 136px;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-transform: uppercase;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  width: 100%;
+  background-color: var(--mid-light-bg);
+  /* outline: 1px solid black; */
+  color: var(--text-font);
+  text-align: right;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-right: 136px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
-
