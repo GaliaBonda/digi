@@ -380,7 +380,7 @@ margin-bottom: 18px;
 }
 
 .projects {
-  padding-top: 80px;
+  padding-top: 75px;
   /* background-color: var(--dark-bg); */
   /* background-image: linear-gradient(right, #FC7864, #FDA366); */
   /* background-image: linear-gradient(red, yellow); */
@@ -390,7 +390,8 @@ margin-bottom: 18px;
     rgba(43, 64, 116, 0) 100%
   );
   /* outline: 1px solid black; */
-  padding-bottom: 80px;
+  padding-bottom: 69px;
+  padding-right: 25px;
 }
 
 .projects h2 {
@@ -401,14 +402,17 @@ margin-bottom: 18px;
   line-height: 56px;
   color: var(--light-font);
   text-align: center;
+  text-transform: capitalize;
   margin-bottom: 24px;
+  letter-spacing: 2.4px;
+  font-stretch: condensed;
 }
 
 .projects hr {
   width: 100px;
   margin: auto;
   background-color: var(--light-font);
-  margin-bottom: 68px;
+  margin-bottom: 78px;
 }
 
 .projects ul {
@@ -416,7 +420,7 @@ margin-bottom: 18px;
   display: flex;
   /* flex-direction: row-reverse; */
   justify-content: center;
-
+  padding-right: 20px;
   /* border: 1px solid black; */
   /* align-items: flex-end; */
 }
@@ -424,16 +428,20 @@ margin-bottom: 18px;
 .projects li {
   /* border: 1px solid black; */
   width: 268px;
-  margin-right: 23px;
+  margin-right: 20px;
   text-align: center;
+  position: relative;
+  
 }
 
 .projects li:first-child {
-  margin-left: 60px;
+  margin-left: 52px;
+  margin-right: 24px;
 }
 
 .projects img {
-  margin-bottom: 29px;
+  margin-bottom: 35px;
+  border-radius: 4px;
 }
 
 .projects span {
@@ -443,7 +451,30 @@ margin-bottom: 18px;
   font-size: 16px;
   line-height: 19px;
   color: var(--font-dark);
+  letter-spacing: 1px;
 }
+
+.projects li:hover a::before {
+  content: url("../images/info-bg.png");
+  width: 243px;
+  height: 217px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.projects li:hover a::after {
+  content: url("../images/icons.png");
+  width: 70px;
+  height: 32px;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  z-index: 2;
+}
+
+
 
 .team {
   padding: 50px 146px 80px 147px;
