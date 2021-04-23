@@ -656,27 +656,31 @@ margin-bottom: 18px;
 .motto {
   background-color: var(--light-bg);
   text-align: center;
-
+  padding-top: 93px;
+  padding-bottom: 133px;
   box-sizing: border-box;
 }
 
 .motto .fa-quote-right {
   color: var(--font-dark);
-  font-size: 34px;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  font-size: 32px;
+ 
+  margin-bottom: 14px;
 }
 
 .motto blockquote {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 38px;
+  line-height: 42px;
   color: var(--text-font);
-  width: 900px;
+  width: 870px;
   text-align: justify;
   margin: auto;
   margin-top: 30px;
+  letter-spacing: 0.08px;
+  font-stretch: condensed;
 }
 
 .motto blockquote strong {
@@ -687,20 +691,23 @@ margin-bottom: 18px;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 28px;
   margin-top: 30px;
   text-align: center;
   margin-bottom: 80px;
+  letter-spacing: 1.1px;
   /* margin-left: auto;
 margin-right: auto; */
 }
 
 .motto .dots {
   font-size: 10px;
-  letter-spacing: 10px;
-  margin-bottom: 79px;
+  letter-spacing: 3px;
   color: var(--font-dark);
+  /*font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 79px;*/
 }
 
 footer {
