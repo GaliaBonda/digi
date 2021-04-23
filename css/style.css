@@ -380,7 +380,7 @@ margin-bottom: 18px;
 }
 
 .projects {
-  padding-top: 75px;
+  padding-top: 72px;
   /* background-color: var(--dark-bg); */
   /* background-image: linear-gradient(right, #FC7864, #FDA366); */
   /* background-image: linear-gradient(red, yellow); */
@@ -420,7 +420,7 @@ margin-bottom: 18px;
   display: flex;
   /* flex-direction: row-reverse; */
   justify-content: center;
-  padding-right: 20px;
+  padding-right: 25px;
   /* border: 1px solid black; */
   /* align-items: flex-end; */
 }
@@ -428,15 +428,15 @@ margin-bottom: 18px;
 .projects li {
   /* border: 1px solid black; */
   width: 268px;
-  margin-right: 20px;
+  margin-right: 19px;
   text-align: center;
   position: relative;
   
 }
 
 .projects li:first-child {
-  margin-left: 52px;
-  margin-right: 24px;
+  margin-left: 59px;
+  /* margin-right: 24px; */
 }
 
 .projects img {
@@ -477,7 +477,7 @@ margin-bottom: 18px;
 
 
 .team {
-  padding: 50px 146px 80px 147px;
+  padding: 56px 155px 80px 149px; /*180*/
   display: flex;
   justify-content: space-between;
 }
@@ -495,30 +495,45 @@ margin-bottom: 18px;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 46px;
   color: var(--text-font);
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  letter-spacing: 2.8px;
+  font-stretch: condensed;
 }
 
 .team hr {
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .team p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17.6px;
   line-height: 24px;
   color: var(--mid-light-text-font);
-  margin-bottom: 39px;
+  margin-bottom: 37px;
+  letter-spacing: 0.2px;
 }
+
+/* button {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+} */
 
 .team button {
   background-color: var(--button-dark);
   color: var(--big-button-font-light);
   width: 230px;
+  height: 60px;
   margin-bottom: 80px;
+  font-size: 16.8px;
 }
 
 .news {
