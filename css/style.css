@@ -15,6 +15,13 @@
   --border-color: #7ebf84;
 }
 
+.container {
+  max-width: 1440px; /*make max-width!!!!*/
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: var(--text-font);
+}
+
 button {
   width: 200px;
   height: 50px;
@@ -32,13 +39,6 @@ hr {
   width: 113px;
   height: 8px;
   background-color: var(--button-dark);
-}
-
-.container {
-  width: 1440px; /*make max-width!!!!*/
-  margin: 0 auto;
-  box-sizing: border-box;
-  color: var(--text-font);
 }
 
 header {
@@ -85,7 +85,7 @@ header .fa-bars {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-stretch: ultra-condensed;
-  width: 513px;
+  max-width: 513px;
   /* text-align: center; */
   padding-top: 107px;
   margin-bottom: 26px;
@@ -97,7 +97,7 @@ header .fa-bars {
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  width: 800px;
+  max-width: 800px;
   font-stretch: condensed;
   margin-bottom: 30px;
   letter-spacing: 1px;
@@ -166,7 +166,7 @@ header .fa-bars {
   font-weight: 300;
   font-size: 16.9px;
   line-height: 18px;
-  width: 550px;
+  max-width: 550px;
   letter-spacing: 0.007px;
 }
 
@@ -185,7 +185,7 @@ header .fa-bars {
 }
 
 .service div {
-  width: 351px;
+  max-width: 351px;
   padding-top: 20px;
 }
 
@@ -517,16 +517,6 @@ margin-bottom: 18px;
   letter-spacing: 0.2px;
 }
 
-/* button {
-  width: 200px;
-  height: 50px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 18px;
-} */
-
 .team button {
   background-color: var(--button-dark);
   color: var(--big-button-font-light);
@@ -570,22 +560,13 @@ margin-bottom: 18px;
 }
 
 .news .wrapper {
-  /* float: left; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 210px 30px 101px 30px 59px 30px 137px 30px;
-  
-  /* grid-template-rows: masonry; */
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  height: 790px; */
   height: 790px;
 }
 
 .news .wrapper div {
-  /* margin-bottom: 40px; */
   width: 269px;
   position: relative;
 }
@@ -607,7 +588,6 @@ margin-bottom: 18px;
 }
 
 .news .wrapper div:nth-child(5) {
-  /* border: 5px solid red; */
   grid-row: 7 / 9;
   padding-top: 15px;
 }
@@ -640,17 +620,12 @@ margin-bottom: 18px;
   bottom: 30px
 }
 
-/* .news .wrapper :not(div:nth-child(3)) a:hover  p {
-  bottom: 10px
-} */
-
 .news img {
   border-radius: 4px;
   
 }
 
 .news p {
-  /* display: block; */
   box-sizing: border-box;
   padding: 10px 20px 11px 21px;
   width: 270px;
@@ -702,7 +677,6 @@ margin-bottom: 18px;
 .motto .fa-quote-right {
   color: var(--font-dark);
   font-size: 32px;
- 
   margin-bottom: 14px;
 }
 
@@ -713,7 +687,7 @@ margin-bottom: 18px;
   font-size: 38px;
   line-height: 42px;
   color: var(--text-font);
-  width: 870px;
+  max-width: 870px;
   text-align: justify;
   margin: auto;
   margin-top: 30px;
@@ -735,17 +709,12 @@ margin-bottom: 18px;
   text-align: center;
   margin-bottom: 80px;
   letter-spacing: 1.1px;
-  /* margin-left: auto;
-margin-right: auto; */
 }
 
 .motto .dots {
   font-size: 10px;
   letter-spacing: 3px;
   color: var(--font-dark);
-  /*font-size: 10px;
-  letter-spacing: 3px;
-  margin-bottom: 79px;*/
 }
 
 footer {
@@ -759,8 +728,6 @@ footer .logo {
   position: absolute;
   top: -30px;
   left: 603px;
-  /* width: 230px; */
-  /* height: 60px; */
   padding: 0 74px;
   background-color: var(--font-dark);
 }
@@ -791,25 +758,17 @@ footer .social {
 }
 
 footer .social li {
-  padding: 25px 131px 16px 140px;
+  box-sizing: border-box;
+  width: 283px;
+  height: 57px;
+  text-align: center;
+  padding-top: 25px;
   border-right: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
 
-footer .social li:nth-child(2) {
-  padding-left: 127px;
-  padding-right: 137px;
-}
-
-footer .social li:nth-child(3) {
-  padding-left: 126px;
-  padding-right: 138px;
-}
-
 footer .social li:last-child {
-  padding-left: 128px;
-  padding-right: 138px;
   border-right: none;
 }
 
@@ -820,7 +779,6 @@ footer .fab {
 
 footer .wrapper {
   display: flex;
-  /* justify-content: ; */
 }
 
 footer .wrapper div {
@@ -873,7 +831,6 @@ footer .go-top {
   left: 0;
   width: 100%;
   background-color: var(--mid-light-bg);
-  /* outline: 1px solid black; */
   color: var(--text-font);
   text-align: right;
   padding-top: 7px;
