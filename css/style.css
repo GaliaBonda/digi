@@ -172,25 +172,19 @@ header .fa-bars {
 }
 
 .service {
+  /* box-sizing: border-box; */
   background-color: var(--light-bg);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
+  column-gap: 102px;
   padding: 2px 0px 37px 62px;
 } 
 
 .service div {
   max-width: 351px;
   padding-top: 20px;
-}
-
-.service ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
-  /* grid-row-gap: 10px; */
-  /* grid-column-gap: 3px;*/
 }
 
 .service h2 {
@@ -217,9 +211,6 @@ header .fa-bars {
 
 .service hr {
   width: 99px;
-  /* height: 8px; */
-  /* padding-bottom: 8px; */
-  /* background-color: var(--button-dark); */
   margin-top: 31px;
   margin-bottom: 30px;
 }
@@ -234,7 +225,16 @@ header .fa-bars {
   letter-spacing: 0.6px;
 }
 
+.service ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+
+}
+
 .service li {
+  box-sizing: border-box;
   width: 229px;
   border-left: 1px solid var(--mid-light-bg);
   border-bottom: 1px solid var(--mid-light-bg);
@@ -242,6 +242,7 @@ header .fa-bars {
   padding-bottom: 43px;
   padding-top: 170px;
   position: relative;
+  height: 255px;
 }
 
 .service .item {
@@ -355,7 +356,6 @@ margin-bottom: 18px;
     rgba(43, 64, 116, 0) 100%
   );
   padding-bottom: 69px;
-  /* padding-right: 25px; */
   padding-left: 151px;
   padding-right: 151px;
 }
@@ -433,9 +433,11 @@ margin-bottom: 18px;
 }
 
 .team {
-  padding: 56px 155px 80px 149px; /*180*/
+  padding: 56px 146px 80px 147px; 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 93px;
+  /* flex-wrap: wrap; */
 }
 
 .team div {
@@ -485,9 +487,7 @@ margin-bottom: 18px;
 
 .news {
   background-color: var(--mid-light-bg);
-  
-    padding: 52px 78px 5px 76px;
-
+  padding: 52px 78px 5px 76px;
   text-align: center;
 }
 
@@ -741,121 +741,3 @@ footer .go-top img {
 }
 
 
-/* HD desktop 1211px and up: 4-column news grid */
-@media only screen and (min-width: 1211px) {
-
-  .news {
-    padding: 52px 118px 5px 120px;
-  }
-
-  .news .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 210px 30px 101px 30px 59px 30px 137px 30px;
-    height: 790px;
-  }
-  
-  .news .wrapper div:first-child {
-    grid-row: 1 / 6;
-  }
-  
-  .news .wrapper div:nth-child(2) {
-    grid-row: 1 / 4;
-  }
-  
-  .news .wrapper div:nth-child(3) {
-    grid-row: 1 / 5;
-  }
-  
-  .news .wrapper div:nth-child(4) {
-    grid-row: 1 / 2;
-  }
-  
-  .news .wrapper div:nth-child(5) {
-    grid-row: 7 / 9;
-    padding-top: 15px;
-  }
-  
-  .news .wrapper div:nth-child(6) {
-    grid-row: 5 / 9;
-  }
-  
-  .news .wrapper div:nth-child(7) {
-    grid-row: 5 / 8;
-    padding-top: 43px;
-  }
-  
-  .news .wrapper div:nth-child(8) {
-    grid-row: 3 / 9;
-  }
-
-}
-
-
-/* Desktop to 1210px: 3-column news grid */
-/* @media only screen and (min-width: 769px) and (max-width: 1210px) */
-@media only screen and (max-width: 1210px)  {
-
-  .news .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 341px 30px 30px 40px 30px 67px 30px 113px 30px;
-    height: 1038px;
-  } 
-
-  .news .wrapper div:first-child {
-    grid-row: 1 / 4;
-  }
-  
-  .news .wrapper div:nth-child(2) {
-    grid-row: 1 / 2;
-  }
-  
-  .news .wrapper div:nth-child(3) {
-    grid-row: 1 / 3;
-  }
-  
-  .news .wrapper div:nth-child(4) {
-    grid-row: 6 / 9;
-  }
-  
-  .news .wrapper div:nth-child(5) {
-    grid-row: 3 / 7;
-  }
-  
-  .news .wrapper div:nth-child(6) {
-    grid-row: 4 / 10;
-  }
-  
-  .news .wrapper div:nth-child(7) {
-    grid-row: 10 / 11;
-  }
-  
-  .news .wrapper div:nth-child(8) {
-    grid-row: 8 / 11;
-  }
-
-}
-
-/* Desktop up to 1024px: service becomes column, icons still in 4 columns */
-/* @media only screen and (min-width: 640px) and (max-width: 1024px) */
-@media only screen and (max-width: 1024px) {
-
-  .service div {
-    max-width: 100%;
-  }
-
-  .service h2 {
-    text-align: center;
-  }
-
-  .projects ul {
-    max-width: 1079px;
-  }
-
-  footer {
-    padding-left: 40px;
-    padding-right: 42px;
-  }
-  
-}
