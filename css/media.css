@@ -1,222 +1,173 @@
 /* HD desktop 1211px and up: 4-column news grid */
 @media only screen and (min-width: 1211px) {
-
-    .news {
-      padding: 52px 118px 5px 120px;
-    }
-  
-    .news .wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 210px 30px 101px 30px 59px 30px 137px 30px;
-      height: 790px;
-    }
-    
-    .news .wrapper div:first-child {
-      grid-row: 1 / 6;
-    }
-    
-    .news .wrapper div:nth-child(2) {
-      grid-row: 1 / 4;
-    }
-    
-    .news .wrapper div:nth-child(3) {
-      grid-row: 1 / 5;
-    }
-    
-    .news .wrapper div:nth-child(4) {
-      grid-row: 1 / 2;
-    }
-    
-    .news .wrapper div:nth-child(5) {
-      grid-row: 7 / 9;
-      padding-top: 15px;
-    }
-    
-    .news .wrapper div:nth-child(6) {
-      grid-row: 5 / 9;
-    }
-    
-    .news .wrapper div:nth-child(7) {
-      grid-row: 5 / 8;
-      padding-top: 43px;
-    }
-    
-    .news .wrapper div:nth-child(8) {
-      grid-row: 3 / 9;
-    }
-  
-  }
-  
-  
-  /* Desktop to 1210px: 3-column news grid */
-  @media only screen and (max-width: 1210px)  {
-  
-    .team img {
-        width: 395px; 
-        height: 380px;
-    }
-
-    .news .wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 341px 30px 30px 40px 30px 67px 30px 113px 30px;
-      height: 1038px;
-    } 
-  
-    .news .wrapper div:first-child {
-      grid-row: 1 / 4;
-    }
-    
-    .news .wrapper div:nth-child(2) {
-      grid-row: 1 / 2;
-    }
-    
-    .news .wrapper div:nth-child(3) {
-      grid-row: 1 / 3;
-    }
-    
-    .news .wrapper div:nth-child(4) {
-      grid-row: 6 / 9;
-    }
-    
-    .news .wrapper div:nth-child(5) {
-      grid-row: 3 / 7;
-    }
-    
-    .news .wrapper div:nth-child(6) {
-      grid-row: 4 / 10;
-    }
-    
-    .news .wrapper div:nth-child(7) {
-      grid-row: 10 / 11;
-    }
-    
-    .news .wrapper div:nth-child(8) {
-      grid-row: 8 / 11;
-    }
-  
-  }
-  
-  /* Desktop up to 1024px: service becomes column, icons still in 4 columns */
-  @media only screen and (max-width: 1024px) {
-    
-    .projects {
-        padding-left: 52.31px;
-        padding-right: 55.41px;
-    }
-
-    .projects ul {
-        column-gap: 27.81px;
-      }
-
-    
-    .team {
-      column-gap: 60px;
-      padding-left: 46px;
-      padding-right: 0px;
-    }
-
-    .service {
-      padding-left: 44px;
-      padding-right: 35px;
-    }
-  
-    .service div {
-      max-width: 100%;
-    }
-  
-    .service h2 {
-      text-align: center;
-    }
-  
-    .projects ul {
-      max-width: 1079px;
-    }
-  
-    footer {
-      padding-left: 40px;
-      padding-right: 42px;
-    }
-    
+  .news {
+    padding: 52px 118px 5px 120px;
   }
 
-  @media only screen and (max-width: 900px) {
-/* 2 column news grid */
-.news .wrapper {
+  .news .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 341px 31px 58px 30px 122px 30px 167px 30px 34px 30px 134px 30px 177px;
-    height: 1525px;
-  } 
-  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 210px 30px 101px 30px 59px 30px 137px 30px;
+    height: 790px;
+  }
+
+  .news .wrapper div:first-child {
+    grid-row: 1 / 6;
+  }
+
+  .news .wrapper div:nth-child(2) {
+    grid-row: 1 / 4;
+  }
+
+  .news .wrapper div:nth-child(3) {
+    grid-row: 1 / 5;
+  }
+
+  .news .wrapper div:nth-child(4) {
+    grid-row: 1 / 2;
+  }
+
+  .news .wrapper div:nth-child(5) {
+    grid-row: 7 / 9;
+    padding-top: 15px;
+  }
+
+  .news .wrapper div:nth-child(6) {
+    grid-row: 5 / 9;
+  }
+
+  .news .wrapper div:nth-child(7) {
+    grid-row: 5 / 8;
+    padding-top: 43px;
+  }
+
+  .news .wrapper div:nth-child(8) {
+    grid-row: 3 / 9;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .service div {
+    max-width: 100%;
+  }
+
+  /* footer .wrapper div:first-child {
+      width: 280px;
+  }
+
+  footer .wrapper div:first-child {
+    width: 280px;
+} */
+}
+
+/* Desktop to 1210px: 3-column news grid */
+@media only screen and (max-width: 1210px) {
+  .team img {
+    width: 395px;
+    height: 380px;
+  }
+
+  .news .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 341px 30px 30px 40px 30px 67px 30px 113px 30px;
+    height: 1038px;
+  }
+
   .news .wrapper div:first-child {
     grid-row: 1 / 4;
   }
-  
+
   .news .wrapper div:nth-child(2) {
     grid-row: 1 / 2;
   }
-  
+
   .news .wrapper div:nth-child(3) {
-    grid-row: 5 / 10;
+    grid-row: 1 / 3;
   }
-  
+
   .news .wrapper div:nth-child(4) {
-    grid-row: 3 / 6;
+    grid-row: 6 / 9;
   }
-  
+
   .news .wrapper div:nth-child(5) {
-    grid-row: 7 / 8;
+    grid-row: 3 / 7;
   }
-  
+
   .news .wrapper div:nth-child(6) {
-    grid-row: 11 / 14;
+    grid-row: 4 / 10;
   }
-  
+
   .news .wrapper div:nth-child(7) {
-    grid-row: 9 / 12;
+    grid-row: 10 / 11;
   }
-  
+
   .news .wrapper div:nth-child(8) {
-    grid-row: 13 / 15;
+    grid-row: 8 / 11;
   }
-  
+}
+
+/* Desktop up to 1024px: service becomes column, icons still in 4 columns */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-right: 30px;
+    padding-left: 46px;
   }
-  
-  /* Desktop up to 768px */
-  @media only screen and (max-width: 768px) {
-  
-  .menu p {
-    display: none;
-  }
-  
+
   .menu h1 {
-    margin-bottom: 45px;
+    font-size: 84px;
+    line-height: 84px;
   }
-  
+
+  .projects {
+    padding-left: 52.31px;
+    padding-right: 55.41px;
+  }
+
+  .projects ul {
+    column-gap: 27.81px;
+  }
+
+  .team {
+    column-gap: 60px;
+    padding-left: 46px;
+    padding-right: 0px;
+  }
+
+  .service {
+    padding-left: 44px;
+    padding-right: 35px;
+  }
+
+  .service div {
+    max-width: 100%;
+  }
+
+  .service h2 {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .projects ul {
+    max-width: 1079px;
+  }
+
+  footer {
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
   .promo {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .promo p {
     margin-bottom: 40px;
   }
-  
-  .team {
-    column-gap: 34px;
-    padding-left: 46px;
-    padding-right: 43px;
-  }
-  
-  .team img {
-    width: 240px; 
-    height: 227px;
-}
-  
-   
-  
+
   /* 2 column service grid */
   .service ul {
     list-style: none;
@@ -224,6 +175,237 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25% 25% 25% 25%;
   }
-  
-  /* 2 column footer */
+
+  /* 2 column news grid */
+  .news .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 341px 31px 58px 30px 122px 30px 167px 30px 34px 30px 134px 30px 177px;
+    height: 1525px;
+    column-gap: 31px;
   }
+
+  .news .wrapper div:first-child {
+    grid-row: 1 / 4;
+  }
+
+  .news .wrapper div:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+
+  .news .wrapper div:nth-child(3) {
+    grid-row: 5 / 10;
+  }
+
+  .news .wrapper div:nth-child(4) {
+    grid-row: 3 / 6;
+  }
+
+  .news .wrapper div:nth-child(5) {
+    grid-row: 7 / 8;
+  }
+
+  .news .wrapper div:nth-child(6) {
+    grid-row: 11 / 14;
+  }
+
+  .news .wrapper div:nth-child(7) {
+    grid-row: 9 / 12;
+  }
+
+  .news .wrapper div:nth-child(8) {
+    grid-row: 13 / 15;
+  }
+}
+
+/* Desktop up to 768px */
+@media only screen and (max-width: 768px) {
+  .menu h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .menu p {
+    display: none;
+  }
+
+  .menu h1 {
+    margin-bottom: 45px;
+  }
+
+  .team {
+    column-gap: 34px;
+    padding-left: 46px;
+    padding-right: 43px;
+  }
+
+  .team img {
+    width: 240px;
+    height: 227px;
+  }
+
+  .motto blockquote {
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  /* 2 column footer */
+
+  footer {
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+
+  footer .wrapper div {
+    width: 50%;
+  }
+
+  footer .wrapper {
+    flex-wrap: wrap;
+    row-gap: 28px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .promo {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+  }
+
+  .service div {
+    text-align: center;
+  }
+
+  .service h2 {
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  .service hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects {
+    padding-left: 62px;
+    padding-right: 61px;
+  }
+
+  .projects ul {
+    flex-direction: column;
+  }
+
+  .projects img {
+    width: 518px;
+    height: 460px;
+  }
+
+  .projects li {
+    width: 518px;
+  }
+
+  .team {
+    flex-direction: column;
+    gap: 46px;
+    padding-left: 59px;
+    padding-right: 61px;
+    padding-bottom: 54px;
+    padding-top: 43px;
+  }
+
+  .team img {
+    width: 520px;
+    height: 478px;
+  }
+
+  .team div {
+    text-align: center;
+  }
+
+  .team hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news {
+    padding: 40px;
+  }
+
+  .news hr {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  /* make news grid one column */
+  .news .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    gap: 21px;
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .projects img {
+    width: 280px;
+    height: auto;
+  }
+
+  .projects li {
+    width: 280px;
+  }
+
+  .projects ul {
+    align-items: center;
+  }
+
+  .team img {
+    width: 280px;
+    height: auto;
+  }
+
+  .team {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 461px) {
+    .menu h1 {
+        font-size: 28px;
+        line-height: 28px;
+        max-width: 180px;
+      }
+
+    .menu .navigate {
+        display: none;
+    }  
+
+    /* make service grid 1 column */
+    .service ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team {
+        padding-left: 16px;
+        padding-right: 23px;
+    }
+
+    .news {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+}

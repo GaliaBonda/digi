@@ -46,10 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header .logo {
-  padding: 16px 61px 17px 61px;
+  padding: 17px 150px 17px 61px;
 }
 
 header .fa-bars {
@@ -59,14 +56,12 @@ header .fa-bars {
   color: var(--dark-bg);
   padding: 13px 13px 13px 14px;
   border-radius: 3px;
-  margin-right: 150px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .menu {
   background-image: url("../images/Rectangle248.png"),
     url("../images/bg-img.jpg");
+  background-size: cover;
   color: var(--light-font);
   text-align: center;
   display: flex;
@@ -172,11 +167,9 @@ header .fa-bars {
 }
 
 .service {
-  /* box-sizing: border-box; */
   background-color: var(--light-bg);
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: center;
   column-gap: 102px;
   padding: 2px 0px 37px 62px;
@@ -230,7 +223,6 @@ header .fa-bars {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
-
 }
 
 .service li {
@@ -436,8 +428,7 @@ margin-bottom: 18px;
   padding: 56px 146px 80px 147px; 
   display: flex;
   justify-content: center;
-  column-gap: 93px;
-  /* flex-wrap: wrap; */
+  gap: 93px;
 }
 
 .team div {
@@ -534,8 +525,7 @@ margin-bottom: 18px;
 }
 
 .news img {
-  border-radius: 4px;
-  
+  border-radius: 4px; 
 }
 
 .news p {
@@ -560,6 +550,8 @@ margin-bottom: 18px;
   text-align: center;
   padding-top: 93px;
   padding-bottom: 133px;
+  padding-left: 41px;
+  padding-right: 42px;
   box-sizing: border-box;
 }
 
@@ -650,7 +642,8 @@ footer .social {
 
 footer .social li {
   box-sizing: border-box;
-  width: 283px;
+  width: 25%;
+  /* width: 283px; */
   height: 57px;
   text-align: center;
   padding-top: 25px;
@@ -670,14 +663,17 @@ footer .fab {
 
 footer .wrapper {
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 footer .wrapper div {
-  margin-right: 173px;
+  /* margin-right: 173px; */
   font-family: 'Roboto', sans-serif;
+  width: 25%;
+  /* width: 283px; */
 }
 
-footer .wrapper div:nth-child(2) {
+/* footer .wrapper div:nth-child(2) {
   margin-right: 195px;
 }
 
@@ -687,7 +683,7 @@ footer .wrapper div:nth-child(3) {
 
 footer .wrapper div:last-child {
   margin-right: 0px;
-}
+} */
 
 footer h3 {
   font-family: "Roboto Condensed", sans-serif;
