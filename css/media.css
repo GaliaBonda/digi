@@ -50,14 +50,6 @@
   .service div {
     max-width: 100%;
   }
-
-  /* footer .wrapper div:first-child {
-      width: 280px;
-  }
-
-  footer .wrapper div:first-child {
-    width: 280px;
-} */
 }
 
 /* Desktop to 1210px: 3-column news grid */
@@ -407,5 +399,51 @@
 }
 
 @media only screen and (max-width: 320px) {
-    
+  footer {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 85px;
+      padding-bottom: 63px;
+  }  
+
+  footer p {
+      text-align: center;
+      margin-bottom: 43px;
+  }
+
+  footer .social {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+      margin-bottom: 46px;
+      
+  }
+
+  footer .social li {
+      border: none;
+      height: min-content;
+  }
+
+  footer .wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  footer address {
+      max-width: 140px;
+  }
+
+  footer .go-top {
+      height: 142px;
+      padding: 0;
+      text-align: center;
+  }
+
+  footer span {
+      display: block;
+      margin-top: 56px;
+      margin-bottom: 22px;
+  }
+
 }

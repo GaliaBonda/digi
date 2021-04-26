@@ -61,13 +61,15 @@ header .fa-bars {
 .menu {
   background-image: url("../images/Rectangle248.png"),
     url("../images/bg-img.jpg");
-  background-size: cover;
+  
+  background-position: center;
   color: var(--light-font);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 107px 70px 79px 70px;
 }
 
 .menu h1 {
@@ -80,7 +82,6 @@ header .fa-bars {
   letter-spacing: 4px;
   font-stretch: ultra-condensed;
   max-width: 513px;
-  padding-top: 107px;
   margin-bottom: 26px;
 }
 
@@ -129,7 +130,6 @@ header .fa-bars {
 .menu .dots {
   font-size: 10px;
   letter-spacing: 3px;
-  margin-bottom: 79px;
 }
 
 .promo {
@@ -643,7 +643,6 @@ footer .social {
 footer .social li {
   box-sizing: border-box;
   width: 25%;
-  /* width: 283px; */
   height: 57px;
   text-align: center;
   padding-top: 25px;
@@ -663,27 +662,12 @@ footer .fab {
 
 footer .wrapper {
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 footer .wrapper div {
-  /* margin-right: 173px; */
   font-family: 'Roboto', sans-serif;
   width: 25%;
-  /* width: 283px; */
 }
-
-/* footer .wrapper div:nth-child(2) {
-  margin-right: 195px;
-}
-
-footer .wrapper div:nth-child(3) {
-  margin-right: 122px;
-}
-
-footer .wrapper div:last-child {
-  margin-right: 0px;
-} */
 
 footer h3 {
   font-family: "Roboto Condensed", sans-serif;
